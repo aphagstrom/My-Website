@@ -71,6 +71,7 @@ ul {
 }
 
 /* About section background image and text styles */
+/* Ensure the about section allows text wrapping */
 .about {
     background-color: #003366; /* Set the background color */
     color: white; /* White text for contrast */
@@ -126,7 +127,6 @@ ul {
     max-width: 350px; /* Optional: Limits the maximum width of each box */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative; /* Needed for positioning the overlay */
     transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
@@ -153,84 +153,6 @@ ul {
     color: #f0f0f0; /* Light color for description */
     line-height: 1.5;
 }
-
-/* Project overlay (hidden by default) */
-.overlay {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 1.2rem;
-}
-
-/* Show overlay on hover */
-.project-item:hover .overlay {
-    display: block; /* Show the overlay when hovering */
-}
-
-/* Modal styles for image gallery */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    overflow: auto;
-    padding-top: 60px;
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #ddd;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Gallery modal content */
-#gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#gallery-images img {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#gallery-images img:hover {
-    transform: scale(1.05);
-}
-
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     .project-item {
