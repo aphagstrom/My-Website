@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Technical Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Technical Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <!-- Profile image -->
+            <img src="images/about.png" alt="Aaron Paul Hagstrom" class="profile-pic">
+            <div class="header-text">
+                <h1>Technical Projects</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Technical Projects</a></li>
+ 			<li><a href="projects1.html">Writing Projects</a></li>
+ 			<li><a href="coursework.html">Coursework</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <main>
         <section>
-            <h2>Projects</h2>
             <div class="project-list">
 
                 <div class="project-item">
-                    <h3><a href="project1.html">Simulation of Missile Guidance</a></h3>
-                    <a href="https://github.com/aphagstrom/missile_guidance_simulation">GitHub Repository</a>
+                    <h3>Simulation of Missile Guidance</h3>
+                    <a href="https://github.com/aphagstrom/Missile-Planning">GitHub Repository</a>
                     <p>Simulation of missile guidance systems using advanced algorithms...</p>
-     
-     
-                    <p><a href="https://github.com/aphagstrom/missile_guidance_simulation" target="_blank">GitHub Repository</a></p>
-                    <p>Simulation of missile guidance systems using advanced algorithms for Proportional Navigation and Augmented ProNav.</p>
                 </div>
 
                 <div class="project-item">
                     <h3>Simulation of Dynamic Fields with Fourier Series</h3>
                     <p><a href="https://github.com/aphagstrom/dynamic_fields_fourier_series" target="_blank">GitHub Repository</a></p>
-                    <p>Simulated the evolution of 1D and 2D Dynamic Neural Fields by solving PDEs using Fourier Series methods in Python. Optimized coefficients to produce certain desired outputs given certain inputs. </p>
+                    <p>Simulated the evolution of 1D and 2D Dynamic Neural Fields by solving PDEs using Fourier Series methods in Python. Optimized coefficients to produce certain desired outputs given certain inputs.</p>
                 </div>
 
                 <div class="project-item">
@@ -48,21 +52,19 @@
                 <div class="project-item">
                     <h3>Multi-scale modeling of Protein Dynamics</h3>
                     <p><a href="" target="_blank">GitHub Repository</a></p>
-                    <p>  Created a coarse-grained 3D model of a protein from Cryo-EM data and refined it using Blender to remove artifacts.
-        Ran FEM simulations to analyze large-scale dynamics, then mapped trajectories back to atomic resolution and performed MD simulations in OpenMM to capture finer motions.
-        Generated synthetic Cryo-EM projections from the MD results, and used Bayesian inference to reconstruct a new 3D model with uncertainty estimates. Then repeat.
-        This iterative pipeline combined structural refinement and dynamic modeling across scales.</p>
+                    <p>Created a coarse-grained 3D model of a protein from Cryo-EM data and refined it using Blender to remove artifacts. Ran FEM simulations to analyze large-scale dynamics, then mapped trajectories back to atomic resolution and performed MD simulations in OpenMM to capture finer motions.</p>
                 </div>
 
                 <div class="project-item">
                     <h3>Horse Racing Prediction Simulator</h3>
                     <p><a href="https://github.com/aphagstrom/horse_racing_prediction" target="_blank">GitHub Repository</a></p>
-                    <p>Built a web-based simulation framework using Streamlit to predict horse race outcomes. Integrated machine learning models with a custom data pipeline connected to external APIs and a local database. The system automates data ingestion, feature processing, model inference, and result visualization in an interactive interface. </p>
+                    <p>Built a web-based simulation framework using Streamlit to predict horse race outcomes. Integrated machine learning models with a custom data pipeline connected to external APIs and a local database. The system automates data ingestion, feature processing, model inference, and result visualization in an interactive interface.</p>
                 </div>
 
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 by Aaron Paul Hagstrom</p>
     </footer>

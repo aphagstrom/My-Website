@@ -1,0 +1,167 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000; /* Bronze text color (darkened gold) */
+}
+
+/* Header and footer styles */
+header, footer {
+    background-color: #003366; /* Navy blue background */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Make sure all header links are white */
+header a {
+    color: white; /* Ensures link text is white */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+/* Optional: changes link color to gold on hover */
+header a:hover {
+    color: #000000; /* Gold color on hover */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 2px solid white; /* Optional: adds a white border */
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Header section style */
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* About section background image and text styles */
+/* Ensure the about section allows text wrapping */
+.about {
+    background-color: #003366; /* Set the background color */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Allow the section to take full width */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    line-height: 1.6; /* Increase line-height for better readability */
+    text-align: left; /* Align text to the left (optional) */
+}
+
+/* Allow the content to wrap properly */
+.about p {
+    word-wrap: break-word; /* Ensures that long words break and wrap within the container */
+    margin-bottom: 1.5rem; /* Adds spacing below paragraphs */
+}
+
+/* Make sure the text is responsive */
+@media (max-width: 768px) {
+    .about {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    color: #000000; /* Bronze text color */
+}
+
+
+/* Project list container styles */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem; /* Space between items */
+}
+
+/* Individual project item styles */
+.project-item {
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* Gradient background */
+    color: white; /* White text for better contrast */
+    border-radius: 10px; /* More rounded corners */
+    margin: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width calculation */
+    width: auto; /* Allow width to adjust based on content */
+    min-width: 250px; /* Ensures each box has a minimum width */
+    max-width: 350px; /* Optional: Limits the maximum width of each box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    background-color: #FFD700; /* Gold background on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Project title styling */
+.project-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366; /* Dark blue title */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+/* Project description styling */
+.project-item p {
+    font-size: 1rem;
+    color: #f0f0f0; /* Light color for description */
+    line-height: 1.5;
+}
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .project-item {
+        width: calc(50% - 2rem); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        width: 100%; /* Full-width on small screens */
+    }
+}
