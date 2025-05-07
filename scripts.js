@@ -1,17 +1,19 @@
 // Hover functionality to show overlay
 function showProjectImages(projectId) {
     const overlay = document.getElementById(`${projectId}-overlay`);
-    overlay.style.visibility = 'visible';
-  
-    // When you click the overlay, open the full gallery
-    overlay.onclick = function () {
-        openGallery(projectId);
+    overlay.classList.add('visible');
+
+    overlay.onclick = function (e) {
+        // Prevent click from blocking underlying links only if not clicking a link
+        if (!e.target.closest('a')) {
+            openGallery(projectId);
+        }
     };
 }
 
 function hideProjectImages(projectId) {
     const overlay = document.getElementById(`${projectId}-overlay`);
-    overlay.style.visibility = 'hidden';
+    overlay.classList.remove('visible');
 }
 
 // Open the gallery modal
