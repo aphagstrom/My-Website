@@ -32,10 +32,12 @@
                 <h2>English and Writing Courses</h2>
                 <ul>
                     <li>Technical Writing</li>
-                    <li>Creative Writing</li>
-                    <li>Literature Analysis</li>
+                    <li>Creative Nonfiction Writing</li>
+                    <li>Literary Analysis</li>
                     <li>Advanced Composition</li>
-                    <li>Rhetoric and Argumentation</li>
+                    <li>Advanced Grammar</li>
+		    <li>Digital Journalism</li>
+		   <li>Print Journalism</li>
                 </ul>
             </div>
 
@@ -43,7 +45,9 @@
                 <h2>Technical Courses</h2>
                 <ul>
                     <li>Nonlinear Control Theory</li>
+		    <li>Thermodynamics</li>
                     <li>Autonomous Aircraft</li>
+		    <li>Engineering Graphics</li>
                     <li>Mathematical Statistics</li>
                     <li>Mathematical Probability</li>
                     <li>Complex Analysis</li>
