@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Paul Hagstrom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/about.png" alt="Your Photo" class="header-photo"> <!-- Add your photo path here -->
+            <h1></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Technical Projects</a></li>
+                <li><a href="writing.html">Writing Projects</a></li>
+                <li><a href="coursework.html">Coursework</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <p></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 by Aaron Paul Hagstrom</p>
+    </footer>
+</body>
+</html>
