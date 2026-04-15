@@ -1,495 +1,487 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Paul Hagstrom — Defense Technical Writer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a2332;
+      --slate: #2d3a4a;
+      --steel: #4a5568;
+      --mid: #718096;
+      --light: #a0aec0;
+      --pale: #e2e8f0;
+      --off-white: #f7f8fa;
+      --white: #ffffff;
+      --accent: #c5a55a;
+      --accent-dim: rgba(197, 165, 90, 0.12);
+      --link: #4a6fa5;
+      --serif: 'Source Serif 4', Georgia, serif;
+      --sans: 'DM Sans', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-  <meta charset="UTF-8">\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-  <title>Aaron Paul Hagstrom \'97 Defense Technical Writer</title>\
-  <link rel="preconnect" href="https://fonts.googleapis.com">\
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\
-  <style>\
-    :root \{\
-      --navy: #1a2332;\
-      --slate: #2d3a4a;\
-      --steel: #4a5568;\
-      --mid: #718096;\
-      --light: #a0aec0;\
-      --pale: #e2e8f0;\
-      --off-white: #f7f8fa;\
-      --white: #ffffff;\
-      --accent: #c5a55a;\
-      --accent-dim: rgba(197, 165, 90, 0.12);\
-      --link: #4a6fa5;\
-      --serif: 'Source Serif 4', Georgia, serif;\
-      --sans: 'DM Sans', -apple-system, sans-serif;\
-      --mono: 'JetBrains Mono', monospace;\
-    \}\
-\
-    * \{ margin: 0; padding: 0; box-sizing: border-box; \}\
-\
-    html \{ scroll-behavior: smooth; \}\
-\
-    body \{\
-      font-family: var(--sans);\
-      color: var(--navy);\
-      background: var(--off-white);\
-      line-height: 1.6;\
-      -webkit-font-smoothing: antialiased;\
-    \}\
-\
-    /* ---- NAV ---- */\
-    nav \{\
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;\
-      background: rgba(26, 35, 50, 0.95);\
-      backdrop-filter: blur(12px);\
-      border-bottom: 1px solid rgba(197, 165, 90, 0.2);\
-    \}\
-    nav .nav-inner \{\
-      max-width: 1080px; margin: 0 auto;\
-      display: flex; align-items: center; justify-content: space-between;\
-      padding: 14px 32px;\
-    \}\
-    nav .nav-name \{\
-      font-family: var(--sans); font-weight: 700; font-size: 14px;\
-      color: var(--pale); letter-spacing: 2px; text-transform: uppercase;\
-    \}\
-    nav .nav-links \{ display: flex; gap: 28px; \}\
-    nav .nav-links a \{\
-      font-size: 13px; font-weight: 500; color: var(--light);\
-      text-decoration: none; letter-spacing: 0.5px; text-transform: uppercase;\
-      transition: color 0.2s;\
-    \}\
-    nav .nav-links a:hover \{ color: var(--accent); \}\
-\
-    /* ---- HERO ---- */\
-    .hero \{\
-      min-height: 100vh; display: flex; align-items: center; justify-content: center;\
-      background: var(--navy);\
-      position: relative; overflow: hidden;\
-      padding: 120px 32px 80px;\
-    \}\
-    .hero::before \{\
-      content: ''; position: absolute; inset: 0;\
-      background:\
-        radial-gradient(ellipse at 20% 50%, rgba(197,165,90,0.06) 0%, transparent 60%),\
-        radial-gradient(ellipse at 80% 30%, rgba(74,111,165,0.08) 0%, transparent 50%);\
-    \}\
-    .hero-content \{\
-      max-width: 720px; text-align: center; position: relative; z-index: 1;\
-    \}\
-    .hero-label \{\
-      font-family: var(--mono); font-size: 12px; font-weight: 500;\
-      color: var(--accent); letter-spacing: 3px; text-transform: uppercase;\
-      margin-bottom: 24px;\
-    \}\
-    .hero h1 \{\
-      font-family: var(--serif); font-size: clamp(36px, 5vw, 56px);\
-      font-weight: 700; color: var(--white); line-height: 1.15;\
-      margin-bottom: 20px;\
-    \}\
-    .hero-sub \{\
-      font-size: 18px; color: #d4dce6; line-height: 1.7;\
-      max-width: 600px; margin: 0 auto 36px;\
-    \}\
-    .hero-contact \{\
-      display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;\
-      font-size: 14px; color: #d4dce6;\
-    \}\
-    .hero-contact a \{ color: var(--accent); text-decoration: none; \}\
-    .hero-contact a:hover \{ text-decoration: underline; \}\
-    .hero-contact span \{ color: #92a3b8; \}\
-\
-    /* ---- SECTIONS ---- */\
-    section \{ padding: 80px 32px; \}\
-    .container \{ max-width: 800px; margin: 0 auto; \}\
-\
-    .section-label \{\
-      font-family: var(--mono); font-size: 11px; font-weight: 500;\
-      color: var(--accent); letter-spacing: 3px; text-transform: uppercase;\
-      margin-bottom: 12px;\
-    \}\
-    .section-title \{\
-      font-family: var(--serif); font-size: 28px; font-weight: 700;\
-      color: var(--navy); margin-bottom: 32px;\
-      padding-bottom: 16px; border-bottom: 1px solid var(--pale);\
-    \}\
-\
-    /* ---- ABOUT ---- */\
-    .about \{ background: var(--white); \}\
-    .about p \{\
-      font-size: 16px; line-height: 1.8; color: var(--steel);\
-      margin-bottom: 16px;\
-    \}\
-    .about strong \{ color: var(--navy); \}\
-\
-    /* ---- EXPERIENCE ---- */\
-    .experience \{ background: var(--off-white); \}\
-    .role \{\
-      margin-bottom: 36px;\
-      padding-bottom: 36px;\
-      border-bottom: 1px solid var(--pale);\
-    \}\
-    .role:last-child \{ border-bottom: none; margin-bottom: 0; padding-bottom: 0; \}\
-    .role-header \{\
-      display: flex; justify-content: space-between; align-items: baseline;\
-      flex-wrap: wrap; gap: 8px; margin-bottom: 4px;\
-    \}\
-    .role-title \{\
-      font-family: var(--serif); font-size: 18px; font-weight: 700;\
-      color: var(--navy);\
-    \}\
-    .role-date \{\
-      font-family: var(--mono); font-size: 12px; color: var(--mid);\
-      letter-spacing: 0.5px; white-space: nowrap;\
-    \}\
-    .role-org \{\
-      font-size: 14px; color: var(--steel); font-style: italic;\
-      margin-bottom: 12px;\
-    \}\
-    .role ul \{ list-style: none; \}\
-    .role li \{\
-      font-size: 14px; line-height: 1.7; color: var(--steel);\
-      padding-left: 16px; position: relative; margin-bottom: 6px;\
-    \}\
-    .role li::before \{\
-      content: ''; position: absolute; left: 0; top: 10px;\
-      width: 4px; height: 4px; border-radius: 50%;\
-      background: var(--accent);\
-    \}\
-    .role li strong \{ color: var(--navy); font-weight: 600; \}\
-\
-    /* ---- PUBLICATIONS ---- */\
-    .publications \{ background: var(--white); \}\
-    .pub-grid \{ display: grid; gap: 20px; \}\
-    .pub-item \{\
-      padding: 20px 24px;\
-      background: var(--off-white);\
-      border-left: 3px solid var(--accent);\
-      border-radius: 0 6px 6px 0;\
-      transition: transform 0.2s, box-shadow 0.2s;\
-    \}\
-    .pub-item:hover \{\
-      transform: translateX(4px);\
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);\
-    \}\
-    .pub-outlet \{\
-      font-family: var(--mono); font-size: 11px; font-weight: 500;\
-      color: var(--accent); letter-spacing: 1px; text-transform: uppercase;\
-      margin-bottom: 4px;\
-    \}\
-    .pub-title \{\
-      font-family: var(--serif); font-size: 16px; font-weight: 600;\
-      color: var(--navy); margin-bottom: 6px;\
-    \}\
-    .pub-desc \{ font-size: 13px; color: var(--steel); margin-bottom: 8px; \}\
-    .pub-link \{\
-      font-size: 13px; font-weight: 600; color: var(--link);\
-      text-decoration: none;\
-    \}\
-    .pub-link:hover \{ text-decoration: underline; \}\
-\
-    /* ---- EDUCATION ---- */\
-    .education \{ background: var(--off-white); \}\
-    .edu-grid \{ display: grid; gap: 16px; \}\
-    .edu-item \{\
-      display: flex; justify-content: space-between; align-items: baseline;\
-      flex-wrap: wrap; gap: 4px;\
-      padding-bottom: 16px; border-bottom: 1px solid var(--pale);\
-    \}\
-    .edu-item:last-child \{ border-bottom: none; \}\
-    .edu-degree \{\
-      font-family: var(--serif); font-size: 15px; font-weight: 600;\
-      color: var(--navy);\
-    \}\
-    .edu-school \{ font-size: 14px; color: var(--steel); \}\
-    .edu-year \{\
-      font-family: var(--mono); font-size: 12px; color: var(--mid);\
-    \}\
-\
-    /* ---- CONTACT ---- */\
-    .contact \{\
-      background: var(--navy); color: var(--pale); text-align: center;\
-      padding: 80px 32px;\
-    \}\
-    .contact .section-label \{ color: var(--accent); \}\
-    .contact .section-title \{ color: var(--white); border-bottom-color: var(--slate); \}\
-    .contact p \{ font-size: 16px; line-height: 1.8; color: var(--light); margin-bottom: 24px; \}\
-    .contact-links \{\
-      display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;\
-    \}\
-    .contact-links a \{\
-      font-size: 14px; font-weight: 600; color: var(--accent);\
-      text-decoration: none; letter-spacing: 0.5px;\
-    \}\
-    .contact-links a:hover \{ text-decoration: underline; \}\
-\
-    /* ---- FOOTER ---- */\
-    footer \{\
-      background: var(--navy); text-align: center;\
-      padding: 24px 32px; border-top: 1px solid var(--slate);\
-    \}\
-    footer p \{ font-size: 12px; color: var(--steel); \}\
-\
-    /* ---- RESPONSIVE ---- */\
-    @media (max-width: 640px) \{\
-      nav .nav-links \{ display: none; \}\
-      section \{ padding: 60px 20px; \}\
-      .hero \{ padding: 100px 20px 60px; \}\
-      .role-header \{ flex-direction: column; \}\
-    \}\
-\
-    /* ---- ANIMATIONS ---- */\
-    .fade-up \{\
-      opacity: 1; transform: translateY(0);\
-      transition: opacity 0.6s ease, transform 0.6s ease;\
-    \}\
-    .js-ready .fade-up \{\
-      opacity: 0; transform: translateY(24px);\
-    \}\
-    .js-ready .fade-up.visible \{ opacity: 1; transform: translateY(0); \}\
-  </style>\
-</head>\
-<body>\
-\
-<nav>\
-  <div class="nav-inner">\
-    <div class="nav-name">A. Hagstrom</div>\
-    <div class="nav-links">\
-      <a href="#about">About</a>\
-      <a href="#experience">Experience</a>\
-      <a href="#publications">Writing</a>\
-      <a href="#education">Education</a>\
-      <a href="#contact">Contact</a>\
-    </div>\
-  </div>\
-</nav>\
-\
-<div class="hero">\
-  <div class="hero-content">\
-    <div class="hero-label">Defense Technical Writer</div>\
-    <h1><span style="white-space:nowrap">Bridging Complex Systems</span><br>and Clear Documentation</h1>\
-    <p class="hero-sub">\
-      Technical writer with aerospace research depth and professional journalism training.\
-      I translate missile guidance equations, finite-element simulations, and weapons systems\
-      engineering into documentation that stakeholders can actually use.\
-    </p>\
-    <div class="hero-contact">\
-      <a href="mailto:aphagstrom@gmail.com">aphagstrom@gmail.com</a>\
-      <span>\'b7</span>\
-      <span>(612) 802-5335</span>\
-      <span>\'b7</span>\
-      <a href="https://www.linkedin.com/in/aaron-hagstrom/" target="_blank">LinkedIn</a>\
-      <span>\'b7</span>\
-      <span>U.S. Citizen</span>\
-    </div>\
-  </div>\
-</div>\
-\
-<section class="about" id="about">\
-  <div class="container fade-up">\
-    <div class="section-label">About</div>\
-    <div class="section-title">The Short Version</div>\
-    <p>\
-      I've spent 7+ years working at the intersection of <strong>advanced engineering systems</strong> and\
-      <strong>high-quality technical communication</strong>. My path started in journalism \'97 covering U.S. Army\
-      officer training, reporting on international trade for China Daily, and editing at the Financial Times \'97 before\
-      a deep pivot into applied mathematics and aerospace research.\
-    </p>\
-    <p>\
-      At <strong>Oak Ridge National Laboratory</strong>, I built computational simulation pipelines for molecular\
-      dynamics research. At <strong>Brigham Young University's MAGICC Lab</strong>, I worked on DoD-funded missile\
-      guidance and control systems with Georgia Tech. Along the way, I earned three graduate degrees in mathematics\
-      and journalism.\
-    </p>\
-    <p>\
-      What connects all of it: I can read the math, understand the engineering, and write documentation\
-      that makes both accessible. That combination \'97 domain fluency plus editorial craft \'97 is what I bring\
-      to defense and aerospace technical writing.\
-    </p>\
-  </div>\
-</section>\
-\
-<section class="experience" id="experience">\
-  <div class="container">\
-    <div class="section-label">Experience</div>\
-    <div class="section-title">Selected Roles</div>\
-\
-    <div class="role fade-up">\
-      <div class="role-header">\
-        <div class="role-title">Technical Writer \'97 Veritec, Inc.</div>\
-        <div class="role-date">Jan 2023 \'96 Jun 2024</div>\
-      </div>\
-      <div class="role-org">Signal processing patent documentation & API technical writing</div>\
-      <ul>\
-        <li><strong>Patent Documentation:</strong> Researched and documented 10+ signal processing patents, producing technical summaries for legal and R&D stakeholders.</li>\
-        <li><strong>API Documentation:</strong> Authored user manual for the BlinxPay digital wallet, delivering step-by-step guidance that improved user onboarding.</li>\
-        <li><strong>Stakeholder Coordination:</strong> Interfaced with attorneys and engineering teams to translate complex IP into commercially actionable documentation.</li>\
-      </ul>\
-    </div>\
-\
-    <div class="role fade-up">\
-      <div class="role-header">\
-        <div class="role-title">Software Simulation Analyst \'97 MAGICC Lab, BYU</div>\
-        <div class="role-date">Jan 2024 \'96 Aug 2024</div>\
-      </div>\
-      <div class="role-org">DoD-funded UAV & missile systems \'97 guidance, control, and multi-agent coordination</div>\
-      <ul>\
-        <li><strong>Guidance & Control:</strong> Contributed to physics-based missile guidance simulations involving proportional navigation, Dubins path planning, and multi-agent coordination.</li>\
-        <li><strong>Cross-Institutional Collaboration:</strong> Worked with Georgia Tech COAR Lab on algorithm validation and optimization for weapon-target assignment.</li>\
-        <li><strong>Technical Reporting:</strong> Delivered reports documenting simulation methodology, numerical stability analysis, and research contributions.</li>\
-      </ul>\
-    </div>\
-\
-    <div class="role fade-up">\
-      <div class="role-header">\
-        <div class="role-title">Deputy Editor \'97 Euromoney Institutional Investor</div>\
-        <div class="role-date">Nov 2015 \'96 Jan 2018</div>\
-      </div>\
-      <div class="role-org">Editorial management for IP Stars & LMG Life Sciences legal publications</div>\
-      <ul>\
-        <li><strong>Editorial Management:</strong> Managed production for two international legal publications \'97 commissioning, editing, scheduling, and CMS publication.</li>\
-        <li><strong>Team Leadership:</strong> Supervised and coached staff writers and contributors, ensuring accuracy, clarity, and adherence to house style.</li>\
-      </ul>\
-    </div>\
-\
-    <div class="role fade-up">\
-      <div class="role-header">\
-        <div class="role-title">Computational Science Intern \'97 Oak Ridge National Laboratory</div>\
-        <div class="role-date">Jan 2019 \'96 Aug 2019</div>\
-      </div>\
-      <div class="role-org">Center for Structural Molecular Biology \'97 finite-element & molecular dynamics simulation</div>\
-      <ul>\
-        <li><strong>Simulation Pipeline:</strong> Built integrated FEM and MD pipeline for modeling intrinsically disordered proteins, achieving 74% to 95% volume correlation improvement.</li>\
-        <li><strong>Scientific Documentation:</strong> Co-authored draft paper for Royal Society Open Science; presented findings to CSMB staff.</li>\
-        <li><strong>Multi-Tool Workflow:</strong> Operated across FFEA, Gromacs/OpenMM, Scipion/Xmipp, Blender, and Bayesian inference tools.</li>\
-      </ul>\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="publications" id="publications">\
-  <div class="container">\
-    <div class="section-label">Publications</div>\
-    <div class="section-title">Selected Writing</div>\
-    <div class="pub-grid">\
-\
-      <div class="pub-item fade-up">\
-        <div class="pub-outlet">SIAM News</div>\
-        <div class="pub-title">BRL-CAD: An Open-Source Solid Modeling System from the U.S. Army</div>\
-        <div class="pub-desc">Feature on the Army's open-source CAD system used for military applications.</div>\
-        <a class="pub-link" href="https://www.siam.org/publications/siam-news/articles/brl-cad-an-open-source-solid-modeling-system-from-the-us-army/" target="_blank">Read article \uc0\u8594 </a>\
-      </div>\
-\
-      <div class="pub-item fade-up">\
-        <div class="pub-outlet">SIAM News</div>\
-        <div class="pub-title">Engineering Mathematics Around the World</div>\
-        <div class="pub-desc">Feature exploring how engineering mathematics is taught and applied internationally.</div>\
-        <a class="pub-link" href="https://www.siam.org/publications/siam-news/articles/engineering-mathematics-around-the-world/" target="_blank">Read article \uc0\u8594 </a>\
-      </div>\
-\
-      <div class="pub-item fade-up">\
-        <div class="pub-outlet">China Daily USA</div>\
-        <div class="pub-title">US Farmers Respond to China's Sorghum Probe</div>\
-        <div class="pub-desc">Business reporting on U.S.-China agricultural trade tensions and commodity markets.</div>\
-        <a class="pub-link" href="https://www.chinadaily.com.cn/a/201802/06/WS5a795176a3106e7dcc13b163.html" target="_blank">Read article \uc0\u8594 </a>\
-      </div>\
-\
-      <div class="pub-item fade-up">\
-        <div class="pub-outlet">Norwegian-American Weekly</div>\
-        <div class="pub-title">A Friendly Norwegian Invasion</div>\
-        <div class="pub-desc">Feature on the U.S.-Norway military training exchange at Camp Ripley, Minnesota.</div>\
-        <a class="pub-link" href="https://www.norwegianamerican.com/a-friendly-norwegian-invasion/" target="_blank">Read article \uc0\u8594 </a>\
-      </div>\
-\
-      <div class="pub-item fade-up">\
-        <div class="pub-outlet">Financial Times \'97 FT Weekend</div>\
-        <div class="pub-title">World Desk Reporting</div>\
-        <div class="pub-desc">Intern reporter covering science, technology, and economics. Contributed to editorial intelligence briefings for the Smart Reads blog.</div>\
-      </div>\
-\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="education" id="education">\
-  <div class="container">\
-    <div class="section-label">Education</div>\
-    <div class="section-title">Degrees</div>\
-    <div class="edu-grid">\
-      <div class="edu-item fade-up">\
-        <div>\
-          <div class="edu-degree">M.S., Mathematics (Applied Analysis)</div>\
-          <div class="edu-school">Florida Atlantic University</div>\
-        </div>\
-        <div class="edu-year">2023</div>\
-      </div>\
-      <div class="edu-item fade-up">\
-        <div>\
-          <div class="edu-degree">M.A., Mathematics (FEM Simulation of Neural Fields)</div>\
-          <div class="edu-school">University of Hawai\uc0\u699 i at M\u257 noa</div>\
-        </div>\
-        <div class="edu-year">2021</div>\
-      </div>\
-      <div class="edu-item fade-up">\
-        <div>\
-          <div class="edu-degree">M.A., Journalism</div>\
-          <div class="edu-school">University of Southern California \'97 Annenberg Fellow</div>\
-        </div>\
-        <div class="edu-year">2014</div>\
-      </div>\
-      <div class="edu-item fade-up">\
-        <div>\
-          <div class="edu-degree">B.S., Applied & Computational Mathematics</div>\
-          <div class="edu-school">SUNY Empire State</div>\
-        </div>\
-        <div class="edu-year">2017</div>\
-      </div>\
-      <div class="edu-item fade-up">\
-        <div>\
-          <div class="edu-degree">B.A., English Literature</div>\
-          <div class="edu-school">University of Northwestern</div>\
-        </div>\
-        <div class="edu-year">2011</div>\
-      </div>\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="contact" id="contact">\
-  <div class="container">\
-    <div class="section-label">Contact</div>\
-    <div class="section-title">Let's Talk</div>\
-    <p>\
-      Open to defense technical writing roles \'97 on-site, hybrid, or remote.\
-      U.S. citizen, clearance eligible.\
-    </p>\
-    <div class="contact-links">\
-      <a href="mailto:aphagstrom@gmail.com">aphagstrom@gmail.com</a>\
-      <a href="https://www.linkedin.com/in/aaron-hagstrom/" target="_blank">LinkedIn</a>\
-      <a href="https://github.com/aphagstrom" target="_blank">GitHub</a>\
-    </div>\
-  </div>\
-</section>\
-\
-<footer>\
-  <p>\'a9 2026 Aaron Paul Hagstrom</p>\
-</footer>\
-\
-<script>\
-  // Enable animations only when IntersectionObserver is available\
-  if ('IntersectionObserver' in window) \{\
-    document.body.classList.add('js-ready');\
-    const observer = new IntersectionObserver((entries) => \{\
-      entries.forEach(entry => \{ if (entry.isIntersecting) entry.target.classList.add('visible'); \});\
-    \}, \{ threshold: 0.15 \});\
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));\
-  \}\
-</script></body>\
-</html>\
-}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      color: var(--navy);
+      background: var(--off-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(26, 35, 50, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(197, 165, 90, 0.2);
+    }
+    nav .nav-inner {
+      max-width: 1080px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 32px;
+    }
+    nav .nav-name {
+      font-family: var(--sans); font-weight: 700; font-size: 14px;
+      color: var(--pale); letter-spacing: 2px; text-transform: uppercase;
+    }
+    nav .nav-links { display: flex; gap: 28px; }
+    nav .nav-links a {
+      font-size: 13px; font-weight: 500; color: var(--light);
+      text-decoration: none; letter-spacing: 0.5px; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav .nav-links a:hover { color: var(--accent); }
+
+    /* ---- HERO ---- */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--navy);
+      position: relative; overflow: hidden;
+      padding: 120px 32px 80px;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(197,165,90,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(74,111,165,0.08) 0%, transparent 50%);
+    }
+    .hero-content {
+      max-width: 720px; text-align: center; position: relative; z-index: 1;
+    }
+    .hero-label {
+      font-family: var(--mono); font-size: 12px; font-weight: 500;
+      color: var(--accent); letter-spacing: 3px; text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--serif); font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700; color: var(--white); line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero-sub {
+      font-size: 18px; color: #d4dce6; line-height: 1.7;
+      max-width: 600px; margin: 0 auto 36px;
+    }
+    .hero-contact {
+      display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+      font-size: 14px; color: #d4dce6;
+    }
+    .hero-contact a { color: var(--accent); text-decoration: none; }
+    .hero-contact a:hover { text-decoration: underline; }
+    .hero-contact span { color: #92a3b8; }
+
+    /* ---- SECTIONS ---- */
+    section { padding: 80px 32px; }
+    .container { max-width: 800px; margin: 0 auto; }
+
+    .section-label {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      color: var(--accent); letter-spacing: 3px; text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--serif); font-size: 28px; font-weight: 700;
+      color: var(--navy); margin-bottom: 32px;
+      padding-bottom: 16px; border-bottom: 1px solid var(--pale);
+    }
+
+    /* ---- ABOUT ---- */
+    .about { background: var(--white); }
+    .about p {
+      font-size: 16px; line-height: 1.8; color: var(--steel);
+      margin-bottom: 16px;
+    }
+    .about strong { color: var(--navy); }
+
+    /* ---- EXPERIENCE ---- */
+    .experience { background: var(--off-white); }
+    .role {
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--pale);
+    }
+    .role:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .role-header {
+      display: flex; justify-content: space-between; align-items: baseline;
+      flex-wrap: wrap; gap: 8px; margin-bottom: 4px;
+    }
+    .role-title {
+      font-family: var(--serif); font-size: 18px; font-weight: 700;
+      color: var(--navy);
+    }
+    .role-date {
+      font-family: var(--mono); font-size: 12px; color: var(--mid);
+      letter-spacing: 0.5px; white-space: nowrap;
+    }
+    .role-org {
+      font-size: 14px; color: var(--steel); font-style: italic;
+      margin-bottom: 12px;
+    }
+    .role ul { list-style: none; }
+    .role li {
+      font-size: 14px; line-height: 1.7; color: var(--steel);
+      padding-left: 16px; position: relative; margin-bottom: 6px;
+    }
+    .role li::before {
+      content: ''; position: absolute; left: 0; top: 10px;
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--accent);
+    }
+    .role li strong { color: var(--navy); font-weight: 600; }
+
+    /* ---- PUBLICATIONS ---- */
+    .publications { background: var(--white); }
+    .pub-grid { display: grid; gap: 20px; }
+    .pub-item {
+      padding: 20px 24px;
+      background: var(--off-white);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pub-item:hover {
+      transform: translateX(4px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .pub-outlet {
+      font-family: var(--mono); font-size: 11px; font-weight: 500;
+      color: var(--accent); letter-spacing: 1px; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .pub-title {
+      font-family: var(--serif); font-size: 16px; font-weight: 600;
+      color: var(--navy); margin-bottom: 6px;
+    }
+    .pub-desc { font-size: 13px; color: var(--steel); margin-bottom: 8px; }
+    .pub-link {
+      font-size: 13px; font-weight: 600; color: var(--link);
+      text-decoration: none;
+    }
+    .pub-link:hover { text-decoration: underline; }
+
+    /* ---- EDUCATION ---- */
+    .education { background: var(--off-white); }
+    .edu-grid { display: grid; gap: 16px; }
+    .edu-item {
+      display: flex; justify-content: space-between; align-items: baseline;
+      flex-wrap: wrap; gap: 4px;
+      padding-bottom: 16px; border-bottom: 1px solid var(--pale);
+    }
+    .edu-item:last-child { border-bottom: none; }
+    .edu-degree {
+      font-family: var(--serif); font-size: 15px; font-weight: 600;
+      color: var(--navy);
+    }
+    .edu-school { font-size: 14px; color: var(--steel); }
+    .edu-year {
+      font-family: var(--mono); font-size: 12px; color: var(--mid);
+    }
+
+    /* ---- CONTACT ---- */
+    .contact {
+      background: var(--navy); color: var(--pale); text-align: center;
+      padding: 80px 32px;
+    }
+    .contact .section-label { color: var(--accent); }
+    .contact .section-title { color: var(--white); border-bottom-color: var(--slate); }
+    .contact p { font-size: 16px; line-height: 1.8; color: var(--light); margin-bottom: 24px; }
+    .contact-links {
+      display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+    }
+    .contact-links a {
+      font-size: 14px; font-weight: 600; color: var(--accent);
+      text-decoration: none; letter-spacing: 0.5px;
+    }
+    .contact-links a:hover { text-decoration: underline; }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: var(--navy); text-align: center;
+      padding: 24px 32px; border-top: 1px solid var(--slate);
+    }
+    footer p { font-size: 12px; color: var(--steel); }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 640px) {
+      nav .nav-links { display: none; }
+      section { padding: 60px 20px; }
+      .hero { padding: 100px 20px 60px; }
+      .role-header { flex-direction: column; }
+    }
+
+    /* ---- ANIMATIONS ---- */
+    .fade-up {
+      opacity: 1; transform: translateY(0);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .js-ready .fade-up {
+      opacity: 0; transform: translateY(24px);
+    }
+    .js-ready .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-name">A. Hagstrom</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Writing</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-label">Defense Technical Writer</div>
+    <h1><span style="white-space:nowrap">Bridging Complex Systems</span><br>and Clear Documentation</h1>
+    <p class="hero-sub">
+      Technical writer with aerospace research depth and professional journalism training.
+      I translate missile guidance equations, finite-element simulations, and weapons systems
+      engineering into documentation that stakeholders can actually use.
+    </p>
+    <div class="hero-contact">
+      <a href="mailto:aphagstrom@gmail.com">aphagstrom@gmail.com</a>
+      <span>·</span>
+      <span>(612) 802-5335</span>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/aaron-hagstrom/" target="_blank">LinkedIn</a>
+      <span>·</span>
+      <span>U.S. Citizen</span>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="container fade-up">
+    <div class="section-label">About</div>
+    <div class="section-title">The Short Version</div>
+    <p>
+      I've spent 7+ years working at the intersection of <strong>advanced engineering systems</strong> and
+      <strong>high-quality technical communication</strong>. My path started in journalism — covering U.S. Army
+      officer training, reporting on international trade for China Daily, and editing at the Financial Times — before
+      a deep pivot into applied mathematics and aerospace research.
+    </p>
+    <p>
+      At <strong>Oak Ridge National Laboratory</strong>, I built computational simulation pipelines for molecular
+      dynamics research. At <strong>Brigham Young University's MAGICC Lab</strong>, I worked on DoD-funded missile
+      guidance and control systems with Georgia Tech. Along the way, I earned three graduate degrees in mathematics
+      and journalism.
+    </p>
+    <p>
+      What connects all of it: I can read the math, understand the engineering, and write documentation
+      that makes both accessible. That combination — domain fluency plus editorial craft — is what I bring
+      to defense and aerospace technical writing.
+    </p>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-label">Experience</div>
+    <div class="section-title">Selected Roles</div>
+
+    <div class="role fade-up">
+      <div class="role-header">
+        <div class="role-title">Technical Writer — Veritec, Inc.</div>
+        <div class="role-date">Jan 2023 – Jun 2024</div>
+      </div>
+      <div class="role-org">Signal processing patent documentation & API technical writing</div>
+      <ul>
+        <li><strong>Patent Documentation:</strong> Researched and documented 10+ signal processing patents, producing technical summaries for legal and R&D stakeholders.</li>
+        <li><strong>API Documentation:</strong> Authored user manual for the BlinxPay digital wallet, delivering step-by-step guidance that improved user onboarding.</li>
+        <li><strong>Stakeholder Coordination:</strong> Interfaced with attorneys and engineering teams to translate complex IP into commercially actionable documentation.</li>
+      </ul>
+    </div>
+
+    <div class="role fade-up">
+      <div class="role-header">
+        <div class="role-title">Software Simulation Analyst — MAGICC Lab, BYU</div>
+        <div class="role-date">Jan 2024 – Aug 2024</div>
+      </div>
+      <div class="role-org">DoD-funded UAV & missile systems — guidance, control, and multi-agent coordination</div>
+      <ul>
+        <li><strong>Guidance & Control:</strong> Contributed to physics-based missile guidance simulations involving proportional navigation, Dubins path planning, and multi-agent coordination.</li>
+        <li><strong>Cross-Institutional Collaboration:</strong> Worked with Georgia Tech COAR Lab on algorithm validation and optimization for weapon-target assignment.</li>
+        <li><strong>Technical Reporting:</strong> Delivered reports documenting simulation methodology, numerical stability analysis, and research contributions.</li>
+      </ul>
+    </div>
+
+    <div class="role fade-up">
+      <div class="role-header">
+        <div class="role-title">Deputy Editor — Euromoney Institutional Investor</div>
+        <div class="role-date">Nov 2015 – Jan 2018</div>
+      </div>
+      <div class="role-org">Editorial management for IP Stars & LMG Life Sciences legal publications</div>
+      <ul>
+        <li><strong>Editorial Management:</strong> Managed production for two international legal publications — commissioning, editing, scheduling, and CMS publication.</li>
+        <li><strong>Team Leadership:</strong> Supervised and coached staff writers and contributors, ensuring accuracy, clarity, and adherence to house style.</li>
+      </ul>
+    </div>
+
+    <div class="role fade-up">
+      <div class="role-header">
+        <div class="role-title">Computational Science Intern — Oak Ridge National Laboratory</div>
+        <div class="role-date">Jan 2019 – Aug 2019</div>
+      </div>
+      <div class="role-org">Center for Structural Molecular Biology — finite-element & molecular dynamics simulation</div>
+      <ul>
+        <li><strong>Simulation Pipeline:</strong> Built integrated FEM and MD pipeline for modeling intrinsically disordered proteins, achieving 74% to 95% volume correlation improvement.</li>
+        <li><strong>Scientific Documentation:</strong> Co-authored draft paper for Royal Society Open Science; presented findings to CSMB staff.</li>
+        <li><strong>Multi-Tool Workflow:</strong> Operated across FFEA, Gromacs/OpenMM, Scipion/Xmipp, Blender, and Bayesian inference tools.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="publications" id="publications">
+  <div class="container">
+    <div class="section-label">Publications</div>
+    <div class="section-title">Selected Writing</div>
+    <div class="pub-grid">
+
+      <div class="pub-item fade-up">
+        <div class="pub-outlet">SIAM News</div>
+        <div class="pub-title">BRL-CAD: An Open-Source Solid Modeling System from the U.S. Army</div>
+        <div class="pub-desc">Feature on the Army's open-source CAD system used for military applications.</div>
+        <a class="pub-link" href="https://www.siam.org/publications/siam-news/articles/brl-cad-an-open-source-solid-modeling-system-from-the-us-army/" target="_blank">Read article →</a>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-outlet">SIAM News</div>
+        <div class="pub-title">Engineering Mathematics Around the World</div>
+        <div class="pub-desc">Feature exploring how engineering mathematics is taught and applied internationally.</div>
+        <a class="pub-link" href="https://www.siam.org/publications/siam-news/articles/engineering-mathematics-around-the-world/" target="_blank">Read article →</a>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-outlet">China Daily USA</div>
+        <div class="pub-title">US Farmers Respond to China's Sorghum Probe</div>
+        <div class="pub-desc">Business reporting on U.S.-China agricultural trade tensions and commodity markets.</div>
+        <a class="pub-link" href="https://www.chinadaily.com.cn/a/201802/06/WS5a795176a3106e7dcc13b163.html" target="_blank">Read article →</a>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-outlet">Norwegian-American Weekly</div>
+        <div class="pub-title">A Friendly Norwegian Invasion</div>
+        <div class="pub-desc">Feature on the U.S.-Norway military training exchange at Camp Ripley, Minnesota.</div>
+        <a class="pub-link" href="https://www.norwegianamerican.com/a-friendly-norwegian-invasion/" target="_blank">Read article →</a>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-outlet">Financial Times — FT Weekend</div>
+        <div class="pub-title">World Desk Reporting</div>
+        <div class="pub-desc">Intern reporter covering science, technology, and economics. Contributed to editorial intelligence briefings for the Smart Reads blog.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <div class="container">
+    <div class="section-label">Education</div>
+    <div class="section-title">Degrees</div>
+    <div class="edu-grid">
+      <div class="edu-item fade-up">
+        <div>
+          <div class="edu-degree">M.S., Mathematics (Applied Analysis)</div>
+          <div class="edu-school">Florida Atlantic University</div>
+        </div>
+        <div class="edu-year">2023</div>
+      </div>
+      <div class="edu-item fade-up">
+        <div>
+          <div class="edu-degree">M.A., Mathematics (FEM Simulation of Neural Fields)</div>
+          <div class="edu-school">University of Hawaiʻi at Mānoa</div>
+        </div>
+        <div class="edu-year">2021</div>
+      </div>
+      <div class="edu-item fade-up">
+        <div>
+          <div class="edu-degree">M.A., Journalism</div>
+          <div class="edu-school">University of Southern California — Annenberg Fellow</div>
+        </div>
+        <div class="edu-year">2014</div>
+      </div>
+      <div class="edu-item fade-up">
+        <div>
+          <div class="edu-degree">B.S., Applied & Computational Mathematics</div>
+          <div class="edu-school">SUNY Empire State</div>
+        </div>
+        <div class="edu-year">2017</div>
+      </div>
+      <div class="edu-item fade-up">
+        <div>
+          <div class="edu-degree">B.A., English Literature</div>
+          <div class="edu-school">University of Northwestern</div>
+        </div>
+        <div class="edu-year">2011</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <div class="section-title">Let's Talk</div>
+    <p>
+      Open to defense technical writing roles — on-site, hybrid, or remote.
+      U.S. citizen, clearance eligible.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:aphagstrom@gmail.com">aphagstrom@gmail.com</a>
+      <a href="https://www.linkedin.com/in/aaron-hagstrom/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/aphagstrom" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Aaron Paul Hagstrom</p>
+</footer>
+
+<script>
+  // Enable animations only when IntersectionObserver is available
+  if ('IntersectionObserver' in window) {
+    document.body.classList.add('js-ready');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  }
+</script></body>
+</html>
